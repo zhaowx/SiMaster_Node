@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "entry": {
+    "index": "./app.js"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "bunyan-prettystream": "^0.1.3",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "atool-build": "^0.9.0",
+    "atool-test-mocha": "^0.1.4",
+    "babel-eslint": "^7.0.0",
+    "babel-plugin-import": "^1.0.1",
+    "babel-plugin-transform-runtime": "^6.8.0",
+    "babel-runtime": "^6.9.2",
+    "dora": "0.4.x",
+    "dora-plugin-proxy": "^0.8.5",
+    "dora-plugin-webpack": "^0.8.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-html": "^4.0.6",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
+    "expect": "^1.20.1",
+    "json-server": "^0.14.0",
+    "pre-commit": "1.x",
+    "redbox-react": "^1.2.6",
+    "url-loader": "^1.1.2"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "scripts": {
+    "start": "node --harmony app.js"
+  }
+}
